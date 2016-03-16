@@ -1,0 +1,39 @@
+apply plugin: 'android'
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.1.0'
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 19
+        versionName '4.0'
+        versionCode 4
+    }
+    signingConfigs {
+        release {
+            storeFile file('/Users/Dani/Documents/atractivas/atractivas.jks')
+            storePassword 'ubqgyj2014'
+            keyAlias 'Atractivas'
+            keyPassword 'UbqGyj2014'
+        }
+    }
+    buildTypes {
+        release {
+            //runProguard true
+            //proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:support-v4:19.1.'
+    compile 'com.android.support:appcompat-v7:19.+'
+    compile 'com.google.android.gms:play-services:4.4.52'
+    compile files('libs/AdFramework-1.0.0.jar')
+    compile files('libs/yoc-android-sdk-2.1.jar')
+    compile files('libs/SmartAdServer-Android-SDK-5.0.3.jar')
+    compile files('libs/gson-2.2.4.jar')
+}

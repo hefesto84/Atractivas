@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="fondomenu">#ff99ac38</color>
+	<color name="fondoimagen">#ffffffff</color>
+	<color name="letrasmenu">#ffffffff</color>
+	<dimen name="letrasmenu">18dp</dimen>
+	<dimen name="imagenmenu">20dp</dimen>
+	<dimen name="padtop">5dp</dimen>
+	<dimen name="padright">0dp</dimen>
+	<dimen name="padbottom">5dp</dimen>
+	<dimen name="padleft">15dp</dimen>
+</resources>

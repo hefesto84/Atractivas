@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="es.ubiqua.atractivas"
+>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+	<permission android:name="es.ubiqua.atractivas.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="es.ubiqua.atractivas.permission.C2D_MESSAGE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<!--	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission> -->
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.VIBRATE"/>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/CustomTheme"
+		android:name=".ApplicationApp"
+		android:largeHeap="true"
+		>
+
+		<meta-data
+			android:name="com.google.android.gms.version"
+			android:value="@integer/google_play_services_version"
+			/>
+		<activity
+			android:name=".LoadingActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Black.NoTitleBar"
+			android:icon="@drawable/ic_launcher"
+			android:label="@string/app_name"
+			>
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="es.ubiqua.atractivas.MainActivity"
+			android:screenOrientation="portrait"
+			android:label=""
+			android:icon="@drawable/application_logo"
+			>
+		</activity>
+		<activity
+            android:name="es.ubiqua.atractivas.YoutubeActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="es.ubiqua.atractivas.YoutubeActivity"
+            android:label=""
+            android:icon="@drawable/application_logo"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="es.ubiqua.atractivas.YoutubeActivity"
+                />
+        </activity>
+		<activity
+			android:name="es.ubiqua.atractivas.ArticleActivity"
+			android:screenOrientation="portrait"
+			android:parentActivityName="es.ubiqua.atractivas.MainActivity"
+			android:label=""
+			android:icon="@drawable/application_logo"
+			>
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="es.ubiqua.atractivas.MainActivity"
+				/>
+		</activity>
+		<activity
+			android:name="es.ubiqua.atractivas.GaleryActivity"
+			android:screenOrientation="portrait"
+			android:parentActivityName="es.ubiqua.atractivas.MainActivity"
+			android:label=""
+			android:icon="@drawable/application_logo"
+			>
+			<meta-data
+				android:name="android.support.PARENT_ACTIVITY"
+				android:value="es.ubiqua.atractivas.MainActivity"
+				/>
+		</activity>
+        <activity
+            android:name="es.ubiqua.atractivas.AppdiaActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="es.ubiqua.atractivas.MainActivity"
+            android:label=""
+            android:icon="@drawable/application_logo"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="es.ubiqua.atractivas.MainActivity"
+                />
+        </activity>
+		<activity android:name="com.ligatus.android.adframework.LigAdBrowser" />
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+
+        <receiver
+            android:name="org.skilladev.gcm.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="es.ubiqua.atractivas.gcm" />
+            </intent-filter>
+        </receiver>
+        <service android:name="org.skilladev.gcm.GcmIntentService" />
+	</application>
+</manifest>

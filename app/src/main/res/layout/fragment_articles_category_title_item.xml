@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingTop="@dimen/ListadoTitlesPadtop"
+	android:paddingRight="@dimen/ListadoTitlesPadright"
+	android:paddingBottom="@dimen/ListadoTitlesPadbottom"
+	android:paddingLeft="@dimen/ListadoTitlesPadleft"
+	android:background="@drawable/article_list_titles"
+	android:id="@+id/posicion1"
+	android:layout_below="@id/baner_publicidad"
+>
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:scaleType="fitCenter"
+		android:layout_gravity="center|left"
+		android:layout_marginLeft="9dp"
+		android:layout_marginRight="5dp"
+		android:src="@drawable/portada"
+	/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:text="Portada"
+		android:textColor="@color/categoria_color"
+		android:textSize="@dimen/categoria_tamano"
+		android:textStyle="normal"
+		android:layout_gravity="center|left"
+		android:id="@+id/caterorytitle"
+	/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/ListadoTitulo"
+		android:text="Ir a Galeria"
+		android:textColor="@color/categoria_color"
+		android:textSize="@dimen/categoria_tamano"
+		android:textStyle="normal"
+		android:layout_gravity="center|right"
+	/>
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:id="@+id/ListadoFoto"
+		android:scaleType="fitCenter"
+		android:layout_gravity="center|right"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="9dp"
+		android:src="@drawable/galeria"
+	/>
+</LinearLayout>

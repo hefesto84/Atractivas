@@ -1,0 +1,63 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:paddingLeft="@dimen/app_mar_left"
+	android:paddingRight="@dimen/app_mar_right"
+	android:paddingTop="@dimen/app_mar_top"
+	android:paddingBottom="@dimen/app_mar_bottom"
+	android:background="@color/fondo_color"
+	tools:context="es.ubiqua.atractivas.MainActivity$PlaceholderFragment"
+	android:id="@+id/contentinner"
+>
+    <!--
+   <com.yoc.sdk.adview.YocAdViewContainer
+       android:id="@+id/baner_publicidad"
+       android:layout_width="match_parent"
+       android:background="#00FF00"
+       android:layout_height="50dp"
+   />-->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+
+        <com.smartadserver.android.library.SASBannerView
+            android:id="@+id/adBanner"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"/>
+
+        <include layout="@layout/fragment_articles_category_title_item" />
+
+        <ListView
+            android:id="@+id/MainListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/posicion1"
+            />
+    </LinearLayout>
+
+    <!--
+	<com.yoc.sdk.adview.YocAdViewContainer
+		android:id="@+id/baner_interstitial"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	/>
+	<com.yoc.sdk.adview.YocAdViewContainer
+		android:id="@+id/baner_publicidad"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	/>
+
+	<com.yoc.sdk.adview.YocAdViewContainer
+		android:id="@+id/baner_interstitial"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	/>
+	-->
+</RelativeLayout>

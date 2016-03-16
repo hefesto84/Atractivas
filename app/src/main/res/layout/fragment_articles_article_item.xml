@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="horizontal"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:id="@+id/ListadoItemLayout"
+			  android:paddingTop="@dimen/ListadoPadtop"
+			  android:paddingRight="@dimen/ListadoPadright"
+			  android:paddingBottom="@dimen/ListadoPadbottom"
+			  android:paddingLeft="@dimen/ListadoPadleft"
+			  android:background="@drawable/article_list_item"
+	>
+
+	<ImageView
+		android:layout_width="@dimen/foto_width"
+		android:layout_height="@dimen/foto_height"
+		android:id="@+id/ListadoImagen"
+		android:scaleType="fitCenter"
+		android:layout_gravity="center"
+		android:paddingTop="4dp"
+		android:paddingBottom="4dp"
+		android:paddingLeft="3dp"
+		android:paddingRight="3dp"
+		android:src="@drawable/placeholder_listados" />
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:layout_weight="1"
+		android:paddingLeft="5dp"
+	>
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/ListadoCategoria"
+			android:text=""
+			android:textColor="@color/categoria_color"
+			android:textSize="@dimen/categoria_tamano"
+			android:textStyle="normal"
+			android:layout_gravity="fill_horizontal"
+			android:ellipsize="end"
+		/>
+		<org.skilladev.ui.EllipsizingTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/ListadoTitulo"
+			android:text=""
+			android:textColor="@color/titulo_color"
+			android:textSize="@dimen/titulo_tamano"
+			android:textStyle="normal"
+			android:layout_gravity="fill_horizontal"
+			android:maxLines="2"
+			android:ellipsize="end"
+		/>
+	</LinearLayout>
+	<ImageView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/ListadoFavorito"
+		android:src="@drawable/favoritos"
+		android:layout_gravity="right|top"
+		android:layout_marginRight="6dp"
+		android:clickable="true"
+	/>
+</LinearLayout>

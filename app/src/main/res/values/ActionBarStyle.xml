@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="ActionBarStyle"
+		   parent="@style/Widget.AppCompat.Light.ActionBar">
+		<item name="android:background">@drawable/fondo_actionbar</item>
+
+		<!-- Support library compatibility -->
+		<item name="background">@drawable/fondo_actionbar</item>
+	</style>
+</resources>

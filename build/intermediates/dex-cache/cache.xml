@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Dani/Documents/atractivas/app/libs/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="/Users/Dani/Documents/atractivas/app/build/intermediates/pre-dexed/debug/gson-2.2.4-280b8813b0324b646453282344a6d21e650946a0.jar" />
+    </item>
+    <item
+        jar="/Users/Dani/Documents/atractivas/app/libs/yoc-android-sdk-2.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e3f86c0bc7c6719ffb5f7f285b1f00686e33be97">
+        <dex dex="/Users/Dani/Documents/atractivas/app/build/intermediates/pre-dexed/debug/yoc-android-sdk-2.1-66a5ad87956b82e7faa21881e7c5bb6a7c79d2f6.jar" />
+    </item>
+    <item
+        jar="/Users/Dani/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/Dani/Documents/atractivas/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-93572ea5953521e9416db24ced9fba2263096e2a.jar" />
+    </item>
+    <item
+        jar="/Users/Dani/Documents/atractivas/app/libs/SmartAdServer-Android-SDK-5.0.3.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="572053d9f83322ead4fbf51eb68ca031976baf1b">
+        <dex dex="/Users/Dani/Documents/atractivas/app/build/intermediates/pre-dexed/debug/SmartAdServer-Android-SDK-5.0.3-c713b82f2b9e232310c9883cee6a8f7319e760f3.jar" />
+    </item>
+    <item
+        jar="/Users/Dani/Documents/atractivas/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="/Users/Dani/Documents/atractivas/app/build/intermediates/pre-dexed/debug/classes-39308c77b44c568cc49405218912f89505049bb0.jar" />
+    </item>
+    <item
+        jar="/Users/Dani/Documents/atractivas/app/libs/AdFramework-1.0.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="c85f1c38ba6fb741ebe3d20f8a954f3ea0408ddb">
+        <dex dex="/Users/Dani/Documents/atractivas/app/build/intermediates/pre-dexed/debug/AdFramework-1.0.0-1a10f275596bf52e6c009b2f4ae9f44ed362a280.jar" />
+    </item>
+    <item
+        jar="/Users/Dani/Documents/atractivas/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/4.4.52/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3dfdf1db5ce5ea2999a5dcde8c8e650b02660059">
+        <dex dex="/Users/Dani/Documents/atractivas/app/build/intermediates/pre-dexed/debug/classes-f3bf9da6b7026f2387dbe019461f1f38572b53d0.jar" />
+    </item>
+
+</items>

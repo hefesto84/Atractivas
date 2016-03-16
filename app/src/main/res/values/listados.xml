@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="app_mar_top">0dp</dimen>
+	<dimen name="app_mar_right">0dp</dimen>
+	<dimen name="app_mar_bottom">0dp</dimen>
+	<dimen name="app_mar_left">0dp</dimen>
+
+	<dimen name="foto_width">95dp</dimen>
+	<dimen name="foto_height">72dp</dimen>
+
+	<dimen name="ListadoPadtop">0dp</dimen>
+	<dimen name="ListadoPadright">0dp</dimen>
+	<dimen name="ListadoPadbottom">0dp</dimen>
+	<dimen name="ListadoPadleft">0dp</dimen>
+
+	<dimen name="ListadoTitlesPadtop">6dp</dimen>
+	<dimen name="ListadoTitlesPadright">0dp</dimen>
+	<dimen name="ListadoTitlesPadbottom">6dp</dimen>
+	<dimen name="ListadoTitlesPadleft">0dp</dimen>
+
+	<dimen name="categoria_tamano">13dp</dimen>
+	<dimen name="titulo_tamano">15dp</dimen>
+
+	<color name="categoria_color">#ffff9000</color>
+	<color name="titulo_color">#ff000000</color>
+
+	<color name="fondo_color">#ffffffff</color>
+</resources>

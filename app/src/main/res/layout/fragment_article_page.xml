@@ -1,0 +1,101 @@
+<!--
+  Copyright 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/contentinner"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+>
+	<com.yoc.sdk.adview.YocAdViewContainer
+		android:id="@+id/baner_publicidad"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	/>
+	<org.skilladev.ui.NoAutoScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/content"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@android:color/white"
+		android:layout_below="@id/baner_publicidad"
+	>
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:paddingTop="0dp"
+			android:paddingRight="10dp"
+			android:paddingBottom="35dp"
+			android:paddingLeft="10dp"
+		>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+			>
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:id="@+id/DetalleCategoria"
+					android:text=""
+					android:textColor="@color/categoria_color"
+					android:textSize="@dimen/categoria_tamano"
+					android:textStyle="bold"
+					android:layout_gravity="center|left"
+				/>
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/DetalleFavorito"
+					android:src="@drawable/favoritos"
+					android:layout_gravity="right|top"
+					android:layout_marginRight="6dp"
+					android:clickable="true"
+				/>
+			</LinearLayout>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/DetalleTitulo"
+				android:text=""
+				android:textColor="@color/titulo_color"
+				android:textSize="18dp"
+				android:textStyle="bold"
+			/>
+			<org.skilladev.ui.ImageViewAspectRatio
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/DetalleImagen"
+				android:scaleType="fitCenter"
+				android:layout_gravity="center"
+				android:src="@drawable/placeholder_detalle"
+			/>
+			<WebView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/DestalleFulltext"
+			/>
+			<com.ligatus.android.adframework.LigAdView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:id="@+id/ligAdView"
+				/>
+		</LinearLayout>
+	</org.skilladev.ui.NoAutoScrollView>
+</RelativeLayout>
